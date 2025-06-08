@@ -1,5 +1,6 @@
 export const createGalleryCardTemplate = ({ tags: alt, webformatURL: src, largeImageURL: href, likes, views, comments, downloads}) => {
     return `
+      <li>
       <a class="gallery-item" href="${href}">
       <img class="gallery-image" src="${src}" alt="${alt}" title="${alt}"/>
       <div class="gallery-text-block">
@@ -9,6 +10,7 @@ export const createGalleryCardTemplate = ({ tags: alt, webformatURL: src, largeI
       <p class="gallery-text">Downloads<br>${downloads}</p>
       </div>
       </a>
+      </li>
     `;
 };
   
